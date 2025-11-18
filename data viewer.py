@@ -351,7 +351,7 @@ def load_dataset(filepath):
                 DATA.Front_Right_Linear['ts'].append(elapsed_ms)
                 DATA.Front_Right_Linear['val'].append(front_right_linear)
             
-            if ID == "0x100":
+            if ID == "0x300":
                 data_bytes = bytes.fromhex(data)
                 rear_left_linear = int.from_bytes(data_bytes[0:2], byteorder="big", signed=False) / 10
                 rear_right_linear = int.from_bytes(data_bytes[2:4], byteorder="big", signed=False) / 10
@@ -360,7 +360,7 @@ def load_dataset(filepath):
                 DATA.Rear_Right_Linear['ts'].append(elapsed_ms)
                 DATA.Rear_Right_Linear['val'].append(rear_right_linear)
             
-            if ID == "0x701":
+            if ID == "0x710":
                 data_bytes = bytes.fromhex(data)
                 front_left_wheel_speed = int.from_bytes(data_bytes[0:2], byteorder="big", signed=False) / 100
                 front_right_wheel_speed = int.from_bytes(data_bytes[2:4], byteorder="big", signed=False) / 100

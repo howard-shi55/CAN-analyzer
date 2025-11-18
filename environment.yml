@@ -1,0 +1,15 @@
+name: plotly
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - plotly
+  - plotly-resampler
+  - pyqt
+  - pyqtwebengine
+  - pyinstaller
+  - pyinstaller-hooks-contrib
+prefix: C:\Users\yuyek\miniforge3\envs\plotly
